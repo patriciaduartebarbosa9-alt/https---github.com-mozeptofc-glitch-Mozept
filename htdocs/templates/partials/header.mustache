@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="{{headerCss}}">
+<header class="header">
+    <div class="logo">{{site.title}}</div>
+
+    <nav class="nav">
+        <a href="{{navPrefix}}index.html">Página Inicial</a>
+        <a href="{{navPrefix}}reserva.html">Reservar</a>
+        <a href="{{navPrefix}}mensagens.html">Mensagens</a>
+        <a href="{{navPrefix}}blog.html">Blog</a>
+        <a href="{{navPrefix}}about.html">Sobre Nós</a>
+    </nav>
+
+    <div class="profile-menu-container">
+        <button class="profile-btn" id="profile-btn" aria-label="Menu de Perfil">
+            <img src="https://i.pravatar.cc/64?img=12" alt="Perfil" class="profile-avatar">
+        </button>
+
+        <div class="profile-dropdown" id="profile-dropdown">
+            {{#user.authenticated}}
+                <a href="#" id="ver-perfil-link">👤 Ver Perfil</a>
+                <hr>
+                <button id="btn-delete-account">🗑️ Apagar Conta</button>
+                <button id="btn-logout">🚪 Terminar Sessão</button>
+            {{/user.authenticated}}
+            {{^user.authenticated}}
+                <a href="{{navPrefix}}login.html">🔐 Fazer Login</a>
+                <a href="{{navPrefix}}registar-cliente.html">📝 Registar Cliente</a>
+                <a href="{{navPrefix}}registar-fotografo.html">📷 Registar Fotógrafo</a>
+            {{/user.authenticated}}
+        </div>
+    </div>
+</header>
+
+<script>
+    const headerConfig = {
+        navPrefix: '{{navPrefix}}',
+        userType: '{{user.type}}',
+        userId: {{#user.authenticated}}{{user.id}}{{/user.authenticated}}{{^user.authenticated}}null{{/user.authenticated}}
+    };
+</script>
+<script src="{{headerJs}}"></script>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        <meta name="robots" content="">
+        <link rel="canonical" href="">
+        <meta property="og:title" content="">
+        <meta property="og:description" content="">
+        <meta property="og:image" content="">
+        <meta property="og:url" content="">
+        <meta property="og:type" content="">
+        <meta name="twitter:card" content="">
+        <meta name="twitter:title" content="">
+        <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="">
+    <!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+       
+    
+  </head>
+<body>
+    <link rel="stylesheet" href="assets/css/header.css">
+    <header class="header">
+        <div class="logo">Moze</div>
+    
+        <nav class="nav">
+            <a href="index.html">Página Inicial</a>
+            <a href="reserva.html">Reservar</a>
+            <a href="mensagens.html">Mensagens</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">Sobre Nós</a>
+        </nav>
+    
+        <div class="profile-menu-container">
+            <button class="profile-btn" id="profile-btn" aria-label="Menu de Perfil">
+                <img src="https://i.pravatar.cc/64?img=12" alt="Perfil" class="profile-avatar">
+            </button>
+    
+            <div class="profile-dropdown" id="profile-dropdown">
+                    <a href="login.html">🔐 Fazer Login</a>
+                    <a href="registar-cliente.html">📝 Registar Cliente</a>
+                    <a href="registar-fotografo.html">📷 Registar Fotógrafo</a>
+            </div>
+        </div>
+    </header>
+    
+    <script>
+        const headerConfig = {
+            navPrefix: '',
+            userType: '',
+            userId: null
+        };
+    </script>
+    <script src="assets/js/header.js"></script>
+    
+    <main>
+        
+    <section id="gallery">
+        <div class="gallery-container">
+          
+          <!-- Card 1 -->
+          <article class="gallery-card">
+            <div class="card-header">
+              <div class="header-left">
+                <img src="https://i.pravatar.cc/40?img=6" alt="Fotógrafo" class="profile-avatar">
+                <div class="header-info">
+                  <span class="photographer-name">Sergio Silva</span>
+                  <span class="photographer-location">Via Moze • Editorial Porto</span>
+                </div>
+              </div>
+              <button class="card-menu">...</button>
+            </div>
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1606986628025-35d57e735ae0?w=500&h=500&fit=crop" alt="Fotografia">
+            </div>
+            <div class="card-footer">
+              <div class="card-actions">
+                <button class="action-btn">❤️ 234</button>
+                <button class="action-btn">💬 12</button>
+                <button class="action-btn">📤</button>
+              </div>
+              <div class="card-details">
+                <strong>15 fotos • Natureza</strong>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="gallery-card">
+            <div class="card-header">
+              <div class="header-left">
+                <img src="https://i.pravatar.cc/40?img=7" alt="Fotógrafo" class="profile-avatar">
+                <div class="header-info">
+                  <span class="photographer-name">Julia Martins</span>
+                  <span class="photographer-location">Via Moze • Editorial Vogue</span>
+                </div>
+              </div>
+              <button class="card-menu">...</button>
+            </div>
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1606933248051-5ce98caddc84?w=500&h=500&fit=crop" alt="Fotografia">
+            </div>
+            <div class="card-footer">
+              <div class="card-actions">
+                <button class="action-btn">❤️ 568</button>
+                <button class="action-btn">💬 34</button>
+                <button class="action-btn">📤</button>
+              </div>
+              <div class="card-details">
+                <strong>23 fotos • Vida Selvagem</strong>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="gallery-card">
+            <div class="card-header">
+              <div class="header-left">
+                <img src="https://i.pravatar.cc/40?img=8" alt="Fotógrafo" class="profile-avatar">
+                <div class="header-info">
+                  <span class="photographer-name">Rodrigo Silva</span>
+                  <span class="photographer-location">Via Moze • Editorial Vogue</span>
+                </div>
+              </div>
+              <button class="card-menu">...</button>
+            </div>
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?w=500&h=500&fit=crop" alt="Fotografia">
+            </div>
+            <div class="card-footer">
+              <div class="card-actions">
+                <button class="action-btn">❤️ 389</button>
+                <button class="action-btn">💬 56</button>
+                <button class="action-btn">📤</button>
+              </div>
+              <div class="card-details">
+                <strong>18 fotos • Conceptual</strong>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="gallery-card">
+            <div class="card-header">
+              <div class="header-left">
+                <img src="https://i.pravatar.cc/40?img=9" alt="Fotógrafo" class="profile-avatar">
+                <div class="header-info">
+                  <span class="photographer-name">Sofia Martins</span>
+                  <span class="photographer-location">Via Moze • Editorial Vogue</span>
+                </div>
+              </div>
+              <button class="card-menu">...</button>
+            </div>
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1519167758481-83f19dd76716?w=500&h=500&fit=crop" alt="Fotografia">
+            </div>
+            <div class="card-footer">
+              <div class="card-actions">
+                <button class="action-btn">❤️ 612</button>
+                <button class="action-btn">💬 78</button>
+                <button class="action-btn">📤</button>
+              </div>
+              <div class="card-details">
+                <strong>31 fotos • Natureza</strong>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="gallery-card">
+            <div class="card-header">
+              <div class="header-left">
+                <img src="https://i.pravatar.cc/40?img=10" alt="Fotógrafo" class="profile-avatar">
+                <div class="header-info">
+                  <span class="photographer-name">Paulo Costa</span>
+                  <span class="photographer-location">Via Moze • Editorial Porto</span>
+                </div>
+              </div>
+              <button class="card-menu">...</button>
+            </div>
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1589941013453-ec89f33b5e95?w=500&h=500&fit=crop" alt="Fotografia">
+            </div>
+            <div class="card-footer">
+              <div class="card-actions">
+                <button class="action-btn">❤️ 445</button>
+                <button class="action-btn">💬 92</button>
+                <button class="action-btn">📤</button>
+              </div>
+              <div class="card-details">
+                <strong>27 fotos • Retrato</strong>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="gallery-card">
+            <div class="card-header">
+              <div class="header-left">
+                <img src="https://i.pravatar.cc/40?img=11" alt="Fotógrafo" class="profile-avatar">
+                <div class="header-info">
+                  <span class="photographer-name">Ana Oliveira</span>
+                  <span class="photographer-location">Via Moze • Editorial Vogue</span>
+                </div>
+              </div>
+              <button class="card-menu">...</button>
+            </div>
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1600298881974-6be191ceeda1?w=500&h=500&fit=crop" alt="Fotografia">
+            </div>
+            <div class="card-footer">
+              <div class="card-actions">
+                <button class="action-btn">❤️ 823</button>
+                <button class="action-btn">💬 145</button>
+                <button class="action-btn">📤</button>
+              </div>
+              <div class="card-details">
+                <strong>42 fotos • Vida Selvagem</strong>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+    </main>  
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Connect With Me</h3>
+                <div class="social-links">
+                    <a href="https://github.com/mozeptofc-glitch/Mozept#" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/moze.capture/" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="http://localhost/Mustache-website/index.html">Inicial</a></li>
+                    <li><a href="http://localhost/Mustache-website/reservarM.html">Reservar</a></li>
+                    <li><a href="http://localhost/Mustache-website/mensagensM.html">Mensagens</a></li>
+                    <li><a href="http://localhost/Mustache-website/blogM.html">Blog</a></li>
+                    <li><a href="http://localhost/Mustache-website/sobreM.html">Sobre Nós</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Moze. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.0.0/mustache.min.js"></script>
+    <script src="http://localhost/Mustache-website/assets/js/main.js"></script>
+       
+      
+   </body>
+</html>

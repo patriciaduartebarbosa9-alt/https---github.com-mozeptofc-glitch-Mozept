@@ -1,0 +1,45 @@
+{
+  "site": {
+    "title": "Moze",
+    "description": "Plataforma de Reservas de Fotografia",
+    "author": "Moze Team"
+  },
+  "navPrefix": "",
+  "headerCss": "assets/css/header.css",
+  "headerJs": "assets/js/header.js",
+  "user": {
+    "authenticated": false,
+    "type": null,
+    "id": null
+  },
+  "hero": {
+    "title": "Bem-vindo à Moze!",
+    "subtitle": "A sua plataforma de reservas de fotografia.",
+    "buttons": {
+      "projects": "Ver Projetos",
+      "contact": "Contactar"
+    }
+  },
+  "features": [
+    {
+      "icon": "fas fa-camera-retro",
+      "title": "Fotografia Profissional",
+      "description": "Reserve sessões com fotógrafos experientes para qualquer ocasião."
+    },
+    {
+      "icon": "fas fa-calendar-check",
+      "title": "Gestão de Reservas",
+      "description": "Agende, cancele ou altere reservas de forma simples e rápida."
+    },
+    {
+      "icon": "fas fa-users",
+      "title": "Comunidade de Clientes",
+      "description": "Partilhe experiências e avalie fotógrafos na nossa plataforma."
+    }
+  ],
+  "cta": {
+    "title": "Pronto para reservar?",
+    "description": "Junte-se à Moze e marque já a sua próxima sessão de fotografia!",
+    "button": "Reservar Agora"
+  }
+}
